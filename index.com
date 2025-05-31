@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alto consumo de óleo entre jovens e adolecentes</title>
+  <link rel="icon" href="image.png" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background-image: url('https://isgames.ct.ws/fts/47107936-liquido-vegetal-oleo-onda-fundo-com-gotas-vetor-removebg-preview.png?_t=1748717358');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 1366px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 1.5s ease-in;
+    }
+  </style>
+
+</head>
+<body class="bg-[#FFF9DB] p-6">
+  <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-xl fade-in">
+    <h1 class="text-2xl font-bold mb-6">Alto consumo de óleo entre jovens e adolecentes</h1>
+<p class="text-center mb-6 text-sm">
+Pesquisa quantitativa desenvolvida por: Beatriz, David, Laís, Maria Gabriela, Isabela e Mateus <br> 1° Matemática<br>e avaliada por:<strong> Michele Paoline de Marins Ulhôa Ruiz</strong><br>Instituição: Escola Técnica Estadual Professor Massuyuki Kawano - Tupã
+</p>
+    <form action="https://script.google.com/macros/s/AKfycbxf8djdKyV0aeraQQbk45R---PxJ-OKJiYphZ_wsvn7Lj5H6W1VlLXBh00BEoFT24iGPg/exec" method="POST" class="space-y-6">
+
+      <div>
+        <label class="block font-medium mb-2">1. Qual é seu sexo biológico?</label>
+        <select name="sexo" required class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Masculino">Masculino</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2">2. Qual o seu ano no ensino médio?</label>
+        <select name="ano_ensino" required class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="1 Ano">1 Ano</option>
+          <option value="2 Ano">2 Ano</option>
+          <option value="3 Ano">3 Ano</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2">3. Qual o seu itinerário? (Obrigatório para ETEC)</label>
+        <select name="itinerario" required class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Matemática">Matemática</option>
+          <option value="Linguagens">Linguagens</option>
+          <option value="Desenvolvimento de Sistemas">Desenvolvimento de Sistemas</option>
+          <option value="Administração">Administração</option>
+          <option value="Ciências da Natureza">Ciências da Natureza</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2">4a. Você possui alguma condição de saúde como: Colesterol; Pressão alta ou Diabetes?</label>
+        <select name="condicao" id="condicao" required class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não sei">Não sei</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+
+      <div id="pergunta-4b" class="hidden">
+        <label class="block font-medium mb-2">4b. Qual ou quais você possui?</label>
+        <label><input type="checkbox" name="condicoes" value="Colesterol" class="mr-2">Colesterol</label><br>
+        <label><input type="checkbox" name="condicoes" value="Pressão Alta" class="mr-2">Pressão Alta</label><br>
+        <label><input type="checkbox" name="condicoes" value="Diabetes" class="mr-2">Diabetes</label>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2">5. Com que frequência você consome alimentos ultra processados ricos em gorduras?</label>
+        <select name="frequencia_ultraprocessado" required class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="As vezes">Às vezes</option>
+          <option value="Uma vez por semana">Uma vez por semana</option>
+          <option value="2 a 4 vezes por semana">2 a 4 vezes por semana</option>
+          <option value="Todos os dias">Todos os dias</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2">6. Tem o hábito de fazer ou ingerir alimentos preparados com temperos industrializados?</label>
+        <select name="temperos" required class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+          <option value="Às vezes">Às vezes</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2">7a. Tem costume de consumir alimentos semi-prontos congelados?</label>
+        <select name="semi_prontos" id="semi_prontos" required class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+
+      <div id="pergunta-7b7c" class="hidden">
+        <label class="block font-medium mb-2">7b. Com que frequência você consome esses alimentos?</label>
+        <select name="frequencia_semi" class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Todos os dias">Todos os dias</option>
+          <option value="Uma vez por semana">Uma vez por semana</option>
+          <option value="Raramente">Raramente</option>
+        </select>
+        <label class="block font-medium mt-4 mb-2">7c. Por qual motivo você as consome?</label>
+        <select name="motivo" class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Falta de tempo">Falta de tempo</option>
+          <option value="Praticidade">Praticidade</option>
+          <option value="Por gostar">Por gostar</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2">8. Você já foi orientado por um nutricionista a reduzir gordura?</label>
+        <select name="orientacao" required class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2">9. Já tentaram substituir fritura por opções mais saudáveis?</label>
+        <select name="substituicao" required class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+          <option value="Às vezes">Às vezes</option>
+          <option value="Nunca">Nunca</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2">10a. Sua escola possui cantina?</label>
+        <select name="cantina" id="cantina" required class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+
+      <div id="pergunta-10b10c" class="hidden">
+        <label class="block font-medium mb-2">10b. Você costuma comer frituras da cantina?</label>
+        <select name="frito_cantina" class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+
+        <label class="block font-medium mt-4 mb-2">10c. Com que frequência?</label>
+        <select name="frequencia_cantina" class="w-full p-2 border rounded-xl">
+          <option value="">Selecione</option>
+          <option value="Todos os dias">Todos os dias</option>
+          <option value="3 a 2 vezes por semana">3 a 2 vezes por semana</option>
+          <option value="1 a 2 vezes por semana">1 a 2 vezes por semana</option>
+          <option value="1 vez por semana">1 vez por semana</option>
+          <option value="Às vezes">Às vezes</option>
+          <option value="Raramente">Raramente</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2">11. Qual o seu peso?</label>
+        <input type="text" name="peso" required class="w-full p-2 border rounded-xl" />
+      </div>
+
+      <div>
+        <label class="block font-medium mb-2">12. Qual é a sua altura em metros (ex: 1,75)?</label>
+        <input type="text" name="altura" required class="w-full p-2 border rounded-xl" />
+      </div>
+
+      <button type="submit" class="bg-yellow-600 text-white px-6 py-2 rounded-xl hover:bg-yellow-700 mt-6">Enviar</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("condicao").addEventListener("change", function() {
+      document.getElementById("pergunta-4b").classList.toggle("hidden", this.value !== "Sim");
+    });
+    document.getElementById("semi_prontos").addEventListener("change", function() {
+      document.getElementById("pergunta-7b7c").classList.toggle("hidden", this.value !== "Sim");
+    });
+    document.getElementById("cantina").addEventListener("change", function() {
+      document.getElementById("pergunta-10b10c").classList.toggle("hidden", this.value !== "Sim");
+    });
+  </script>
+</body>
+</html>
