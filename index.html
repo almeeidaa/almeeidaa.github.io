@@ -217,5 +217,34 @@ Pesquisa quantitativa desenvolvida por: Beatriz, David, Laís, Maria Gabriela, I
       document.getElementById("pergunta-10b10c").classList.toggle("hidden", this.value !== "Sim");
     });
   </script>
+
+<div id="mensagem-sucesso" class="hidden text-center mt-6 fade-in">
+  <h2 class="text-xl font-bold text-green-600">Enviado! Obrigado pela participação desse projeto</h2>
+  <img src="obrigado.gif" alt="Obrigado" width="300" height="300" class="mx-auto mt-4">
+</div>
+
+
+
+<script>
+  const form = document.querySelector('form');
+  const mensagemSucesso = document.getElementById('mensagem-sucesso');
+  const formularioContainer = form.parentElement;
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: formData
+    }).then(() => {
+      form.classList.add('hidden');
+      mensagemSucesso.classList.remove('hidden');
+    }).catch(() => {
+      alert('Ocorreu um erro ao enviar. Tente novamente.');
+    });
+  });
+</script>
+
 </body>
 </html>
