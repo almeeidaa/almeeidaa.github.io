@@ -1,79 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Carrossel de Fotos</title>
+  <title>Postagem Instagram - Naile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-    }
     .carousel,
     .carousel-inner,
     .carousel-item {
-      height: 100vh;
+      height: auto;
     }
+
     .carousel-item img {
       width: 100%;
-      height: 100%;
+      aspect-ratio: 4 / 3;
       object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .instagram-post {
+      max-width: 600px;
+      margin: 30px auto;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    .instagram-header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .instagram-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .instagram-username {
+      font-weight: bold;
+    }
+
+    .instagram-caption {
+      padding: 10px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
-<div id="carouselFotos" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="Naile1.jpg" alt="Naile1">
-    </div>
-    <div class="carousel-item">
-      <img src="Naile2.jpg" alt="Naile2">
-    </div>
-    <div class="carousel-item">
-      <img src="Naile3.jpg" alt="Naile3">
-    </div>
-    <div class="carousel-item">
-      <img src="Naile4.jpg" alt="Naile4">
-    </div>
-    <div class="carousel-item">
-      <img src="Naile5.jpg" alt="Naile5">
-    </div>
-    <div class="carousel-item">
-      <img src="20241212_222551.jpg" alt="Naile6">
-    </div>
-    <div class="carousel-item">
-      <img src="Naile7.jpg" alt="Naile7">
-    </div>
-    <div class="carousel-item">
-      <img src="Naile8.jpg" alt="Naile8">
-    </div>
-    <div class="carousel-item">
-      <img src="Naile9.jpg" alt="Naile9">
-    </div>
-    <div class="carousel-item">
-      <img src="Naile10.jpg" alt="Naile10">
-    </div>
-    <div class="carousel-item">
-      <img src="20250310_154953.jpg" alt="Naile11">
+<div class="instagram-post">
+  <div class="instagram-header">
+    <img src="avatar.jpg" alt="avatar">
+    <div>
+      <div class="instagram-username">@naile.oficial</div>
+      <div class="instagram-location">SÃ£o Paulo, Brasil</div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselFotos" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselFotos" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-    <span class="visually-hidden">Próximo</span>
-  </button>
+
+  <div id="carouselFotos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Naile1.jpg" alt="Naile1">
+      </div>
+      <div class="carousel-item">
+        <img src="Naile2.jpg" alt="Naile2">
+      </div>
+      <div class="carousel-item">
+        <img src="Naile3.jpg" alt="Naile3">
+      </div>
+      <div class="carousel-item">
+        <img src="Naile4.jpg" alt="Naile4">
+      </div>
+      <div class="carousel-item">
+        <img src="Naile5.jpg" alt="Naile5">
+      </div>
+      <div class="carousel-item">
+        <img src="20241212_222551.jpg" alt="Naile6">
+      </div>
+      <div class="carousel-item">
+        <img src="Naile7.jpg" alt="Naile7">
+      </div>
+      <div class="carousel-item">
+        <img src="Naile8.jpg" alt="Naile8">
+      </div>
+      <div class="carousel-item">
+        <img src="Naile9.jpg" alt="Naile9">
+      </div>
+      <div class="carousel-item">
+        <img src="Naile10.jpg" alt="Naile10">
+      </div>
+      <div class="carousel-item">
+        <img src="20250310_154953.jpg" alt="Naile11">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFotos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselFotos" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <div class="instagram-caption">
+    ðŸŒŸ Mais um dia de inspiraÃ§Ã£o, criatividade e unhas incrÃ­veis! ðŸ’…âœ¨<br>
+    Qual foi sua favorita desse carrossel? Me conta nos comentÃ¡rios! ðŸ’–<br><br>
+    #unhas #nailart #inspiraÃ§Ã£o #manicure #beleza #nails
+  </div>
 </div>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
